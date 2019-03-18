@@ -1,7 +1,7 @@
 # MyRio c++ toolchain with OpenCv setup using plugin VisualGDB for Visual Studio 2017
 1. [Download toolchain](https://yadi.sk/d/SXJelTVlKoA0qQ) and unpack to "C:\" for example. It contains official NI toolchain for MyRio, pre-compile OpenCV static libs (debug and release version), and lib for MyRio GPIO periphery.
 2. Download Visual GDB plugin from [official site(pay or trial version)](https://visualgdb.com/download/) or [from torrent](http://newtracker.icu/viewtopic.php?t=5674513) and install.
-3. Download and install [LabVIEW 2018 myRIO Toolkit](https://visualgdb.com/download/) from official site. After that you can connect MyRio via USB.
+3. Download and install [LabVIEW 2018 myRIO Toolkit](http://www.ni.com/download/labview-myrio-toolkit-2018/7421/en/) from official site. After that you can connect MyRio via USB.
 4. Create new project by template "Linux project wizard"
 5. Choose option "Create a project from a custom template", and choose template file "C:\arm_Myrio_2017\Project_templates\MyRio_template.vgdbxpt"(It's mine path, your path may be different). And press next.
 6. Choose "Build the project locally with a cross-compiler". Then in "Cross-toolchain" choose "Locate a cross-toolchain by finding its gdb.exe", pick "C:\arm_Myrio_2017\sysroots\i686-nilrtsdk-mingw32\usr\bin\arm-nilrt-linux-gnueabi\arm-nilrt-linux-gnueabi-gdb.exe" and then click "Yes". At "Deployment computer" pick "Create new SSH connection", connect to MyRio by wifi or usb and enter valid params. Then click finish. You will see truble with link program, click "Ignore".
